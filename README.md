@@ -105,7 +105,7 @@ The four plots that you will need to construct are shown below.
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](plo3.png) 
+![plot of chunk unnamed-chunk-4](plot3.png) 
 
 
 ### Plot 4
