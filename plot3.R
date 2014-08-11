@@ -1,6 +1,8 @@
 #### Reference
 #### https://github.com/maurotrb/ExData_Plotting1
 
+png("plot3.png", width = 480, height = 480)
+
 #### Read data.
 datos <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings = "?")
 
@@ -15,10 +17,11 @@ plot( datos$DateTime, datos$Sub_metering_1, xlab="", ylab="Energy sub metering",
 lines(datos$DateTime, datos$Sub_metering_2, xlab="", ylab="Energy sub metering", type="l", col="Red")  
 lines(datos$DateTime, datos$Sub_metering_3, xlab="", ylab="Energy sub metering", type="l", col="Blue") 
 ## Legend
-legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty = c(1, 1, 1))
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty = c(1, 1, 1))
 
 #### Saving the file
-dev.copy(png, file="plot3.png")
+## not properly recorded legends
+## dev.copy(png, file="plot3.png")
 
 #### Closing device
 dev.off()
